@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BGM Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="player">
+            <p class="close" onclick="closePlayer()">
+                <img src="toggle2.png">
+            </p>
+            <div class="main-thumbnail">
+                <img class="main-thumbnail-img" src="images/blank space.jpg"/>
+            </div>
+
+            <div class="song-desc">
+                <h1 class="song-name">Song Name</h1>
+                <h3 class="song-artist">Artist Name</h3>
+            </div>
+            <audio class="audio" controls ></audio>
+
+        </div>
+
+       <div class="section">
+            <h1 class="title">B<span>G</span>M PLAY<span>E</span>R</h1>
+         <div class="music-list" >
+            </div>
+        </div>
+
+    </div>
+
+
+<section class="contact">
+    <div class="Feedback" id="feedback"><a name="Feedback"></a>
+   <h2 class="titleF"><span>Get</span>   A  Feedback</h2></div>
+ <div class="fff">
+     <form action="https://formcarry.com/s/Xg1onN7uohF" method="POST" >
+     <label class="leb">Name :</label><input type="text" name="username" required><br>
+     <label class="leb">You Like BGM</label>
+     <div class="leba">
+         <input type="radio" name="radio" value="Yes" class="radio"><label class="Option">Yes</label> <input type="radio" name="radio" value="No" class="radio"><label class="Option">No</label>
+     </div><br>
+      <textarea type="textar" name="Message" placeholder="Your Favourite BGM or Any Other Message "></textarea><br>
+
+    <input id="range" type="range" name="e"><br>
+    <button type="submit">Submit</button>
+
+</form>
+</div>
+</section>
+    <script src="index.js"></script>
+</body>
+</html>

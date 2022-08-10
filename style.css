@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Cabin+Sketch&family=Cinzel&family=Edu+SA+Beginner:wght@500&family=Merienda+One&family=Poppins:wght@200&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap');
+
+*{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+}
+    
+        .main{
+            height: 100vh;
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: relative;
+            background-color: black;
+        }
+
+        /* player css  */
+
+        .player{
+            width: 100%;
+            height: 100vh;
+            padding: 70px 70px;
+            background-color: #161616;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 40px;
+            align-items: center;
+            font-family: calibri;
+            color: white;
+            position: fixed;
+            z-index: 10;
+            margin-left: 100%;
+            transition: .3s;
+            top: 0;
+        }
+
+        .main-thumbnail{
+            width: 450px;
+            height: 450px;
+            background-color: #161616;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .main-thumbnail  img {
+            width: 300px;
+            height: 300px;
+            margin-left: 70px;
+            border-radius: 200px;
+            object-fit: cover;
+            animation: rotate 50s infinite linear;
+
+        }
+        @keyframes rotate
+        {
+            from
+            {
+                transform: rotate(-360deg);
+                border: 2px solid red;
+            }
+            to
+            {
+                transform: rotate(360deg);
+                border: 2px solid blue;
+            }
+        }
+
+        audio{
+           width: 400px;
+        }
+
+        .song-desc{
+            align-self: flex-start;
+        }
+
+
+
+
+        /* list css  */
+
+        .section{
+           
+            width: 100%;
+            background-color: #161616;
+            padding: 30px 30px;
+            position: absolute;
+        }
+
+        .title{
+           
+            color: whitesmoke;
+            font-size: 40px;
+            font-family: 'Cabin Sketch', cursive;
+            text-align: center;
+            color: red;
+            border: 1px solid #111;
+            background-color: whitesmoke;
+        }
+        .title span
+        {
+            color: orange;
+        }
+
+        .music-list{
+           
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .tile 
+        {
+            width: 100%;
+            padding:30px 30px;
+            background-color: #319391;
+            display: flex;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .tile:hover {
+            background-color: deeppink;
+        } 
+
+        .thumbnail{
+            height: 70px;
+            width: 70px;
+            border-radius:5px;
+            overflow: hidden;
+            background-color: blue;
+        }
+
+        .thumbnail > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .description{
+           padding: 0px 20px;
+           /* background-color: green; */
+           color: white;
+           font-family: calibri;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           row-gap: 3px;
+
+        }
+
+        .description > h2 {
+            font-weight: 300;
+        }
+
+        .description > h3 {
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        .close{
+            font-size: 25px;
+            cursor: pointer;
+            transition: .3s;
+            align-self: flex-end;
+        }
+
+        .close:hover {
+            color: red;
+        }
+ 
+ .Feedback{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleF
+{
+     font-family: 'Rubik', sans-serif;
+     font-size: 2em;
+     color: #000000;
+}
+.titleF span{
+    color: red;
+}
+.fff input{
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  border: solid 2px;
+  font-family: 'Rubik', sans-serif;
+}
+label
+{
+    font-family: 'Rubik', sans-serif;
+}
+.leb
+{
+   font-weight: bolder;
+   font-size: 2em;
+   position: relative;
+   top: 0px;
+
+}
+input.radio
+{
+    height: 40px;
+    font-weight: bolder;
+}
+.Option
+{
+    position: relative;
+    top: 0px;
+     font-size: 3em;
+
+}
+.leba
+{
+    margin: 0;
+    padding: 0;
+}
+textarea{
+  position: relative;
+  top: 20px;
+  left: 200px;
+  width: 400px;
+  height: 150px;
+  border: solid 2px;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  font-size: 2em;
+ 
+  font-weight: bolder;
+}
+.fff button{
+    margin-left: 200px;
+    font-size: 1em;
+    color: #ffffff;
+    background: #111111;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.fff button:hover{
+    letter-spacing: 5px;
+}
+section.contact
+{
+    background: whitesmoke;
+}
+#range
+{
+    display: none;
+}
+
+
+
+
+
+
+       
